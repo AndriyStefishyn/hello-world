@@ -16,7 +16,7 @@ console.log(typeof res3); // "boolean"
 
 let res4 = (Math.sqrt(x-y));//ишіть код, необхідно використовувати змінні x і y
 console.log(res4); // NaN
-console.log(typeof res4); // "number"*/
+console.log(typeof res4); // "number"
 
 
 //Task2
@@ -54,15 +54,12 @@ alert(elements);
 
 
 //Task4
-Напишіть програму, яка  об’єднує всі наявні елементи масиву в стрічку і розділяє їх символом “*”.
-Початковий масив:
-let cities = ["Rome", "Lviv", "Warsaw"]; 
-Результуючий масив:
-"Rome*Lviv*Warsaw"*/
-let cities = ["Rome", "Lviv", "Warsaw"]; 
-let newCities=["Rome*Lviv*Warsaw"];
 
-console.log(newCities);
+let cities = ["Rome", "Lviv", "Warsaw"]; 
+
+let Cities=cities.join("*");
+
+console.log(Cities);
 
 
 
@@ -140,5 +137,3 @@ alert("Доброго дня");
 break;
 default:alert("Error");
 }
-
-
