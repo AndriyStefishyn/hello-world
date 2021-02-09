@@ -1,5 +1,5 @@
 //task 1 
-function calcRectangleArea (){
+ function calcRectangleArea (){
 let width= Number(prompt("Enter the width of the rectangle"));
 let height =Number(prompt("Enter the height of the rectangle"));
 let square = width*height;
@@ -52,15 +52,36 @@ try{
      console.log(exception.stack);
  
 }
-
+ 
 
 //Task 3
+class MonthException {
+    constructor(message){
+        this.message = message;
+        this.name = "MonthExceptoin";
+    }
+}
+function  showMonthName(month) {
+month = month - 1;
+let months = ["Jan", "Feb", "March","April", "May", "June", "July", "August", "September", "October", "November", "December"];    
+if (months[month]!==undefined) {
+    return months[month];
+}else{
+    throw new Error("Invalide number");
+}
+}
+try{
+let myMonth = 20;
+let monthName = showMonthName(myMonth);
+console.log(monthName);
+}catch(a){
+    console.log(a.name, a.message);
+}
 
-
-
+ 
 
 //Task 4
-function showUser (id){
+ function showUser (id){
     let User = {id:id,}
     try{
         if(id<0 ){
@@ -84,4 +105,4 @@ for(let i = 0; i < ids.length; i++){
 }
 return arr;
 }
-console.log(showUsers([]));
+console.log(showUsers([])); 
