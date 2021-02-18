@@ -1,0 +1,169 @@
+
+  <!-- Task 1 -->
+
+<!--   <body>
+    <script>
+    let openTab = window.open("","","width=300,height=300");
+  function change(){
+      openTab.resizeTo(500,500);
+  };
+  setTimeout(change,2000);
+
+  function loc(){
+      openTab.moveTo(200,200);
+  };
+  setTimeout(loc,4000);
+  function exit(){
+    close(openTab);
+  }
+  setTimeout(exit,6000);
+    </script>
+</body>
+ -->
+
+
+<!--  Task 2 -->
+<!-- <p id ='text'>I learning JavaScript events!</p> 
+<div>
+	<button .....>Change style!</button>
+</div>
+<script>
+function changeCSS(){
+    let p = document.getElementById("text");
+p.style.color="orange";
+p.style.fontSize="20";
+p.style.fontFamily="cursive,sansSerif";
+}
+onclick=changeCSS; 
+</script> -->
+
+
+<!-- Task 3 -->
+ 
+   <!-- <button id="one">Click to make the page blue</button>
+    <button id="two">Double-click to make the page pink</button>
+<input type="button" id="button" value="Click and hold to make the page brown">
+<a href="">Hover over to the page yellow</a>
+<script> 
+function first(){
+    document.body.style.backgroundColor = "blue";
+}
+document.getElementById("one").onclick = first;
+
+function second(){
+    document.body.style.backgroundColor = "pink";
+} 
+document.getElementById("two").ondblclick = second;
+
+function third(){
+  document.body.style.backgroundColor = "brown";
+}
+document.getElementById("button").addEventListener("mousedown",third);
+
+function white (){
+    document.body.style.backgroundColor = "white"
+}
+document.getElementById("button").addEventListener("mouseup",white);
+
+function fourth(){
+    document.body.style.backgroundColor = "yellow";
+    }
+function out(){
+    document.body.style.backgroundColor = "white";
+}
+document.body.children[3].addEventListener("mouseenter",fourth);
+document.body.children[3].addEventListener("mouseleave",out)
+</script> -->
+ 
+<!-- Task 4 -->
+<!-- <body>
+        <select id="nameSelect">
+            <option>Peter</option>
+            <option>John</option>
+            <option>Alise</option>
+            <option>Alex</option>
+            <option>Iren</option>
+        </select>
+       <input type="button" onclick="removename()" value="Choose and Delete">
+    <script>
+        function removename()
+        {
+        var x=document.getElementById("nameSelect");
+        x.remove(x.selectedIndex);
+        }
+    </script>
+</body> -->
+
+
+<!-- Task 5 -->
+<!-- <body>
+<input type="button"  value="Live button!" id="inn">
+<div id="div"></div>
+ <script>
+     inn.onclick = ()=>{
+         let a = div.innerHTML;
+         div.innerHTML = a + "<p> onclick <p/>";
+     }
+     inn.onmouseover = ()=>{
+         let a = div.innerHTML;
+         div.innerHTML = a + "<p> mouseover </p>";
+     }
+     inn.onmouseout = ()=>{
+         let a = div.innerHTML;
+         div.innerHTML = a + "<p> mouseout </p>";
+     }
+ </script>
+
+</body> -->
+ 
+
+
+  <!-- Task 6 -->
+<!--   <body>
+    <div id="result"></div>
+    
+    <script>
+    function displayWindowSize(){
+        var w = document.documentElement.clientWidth;
+        var h = document.documentElement.clientHeight;
+        document.getElementById("result").innerHTML = "Width: " + w + ", " + "Height: " + h;
+    }
+    window.addEventListener("resize", displayWindowSize);
+    displayWindowSize();
+    </script>
+    </body>
+    </html>
+   -->
+
+   <!--Task 7  -->
+ <!-- <select name="country" id="country">
+	<option value="ger">Germany</option>
+	<option value="usa">USA</option>
+	<option value="ukr">Ukraine</option>
+</select>
+<select name="cities" id="cities">
+    <option value="ger">Berlin</option>
+    <option value="ger">Dortmund</option>
+    <option value="ger">Dusseldorf</option>
+    <option value="ger">Munich</option>
+    <option value="usa">New-York</option>
+    <option value="usa">Washington</option>
+    <option value="usa">Boston</option>
+    <option value="usa">Chikago</option>
+    <option value="ukr">Kyiv</option>
+    <option value="ukr">Lviv</option>
+    <option value="ukr">Dnipro</option>
+    <option value="ukr">Odesa</option>
+</select>
+<p></p>
+<script>
+console.log(document.querySelectorAll("ger"));
+    let ger = document.getElementById("country")[0];
+    ger.onclick = () =>{
+       
+    }
+</script> -->
+ 
+
+
+ 
