@@ -135,35 +135,46 @@ document.body.children[3].addEventListener("mouseleave",out)
     </html>
    -->
 
+   
    <!--Task 7  -->
- <!-- <select name="country" id="country">
+<!-- <body>
+    <select name="country" id="country">
 	<option value="ger">Germany</option>
 	<option value="usa">USA</option>
 	<option value="ukr">Ukraine</option>
 </select>
 <select name="cities" id="cities">
-    <option value="ger">Berlin</option>
-    <option value="ger">Dortmund</option>
-    <option value="ger">Dusseldorf</option>
-    <option value="ger">Munich</option>
-    <option value="usa">New-York</option>
-    <option value="usa">Washington</option>
-    <option value="usa">Boston</option>
-    <option value="usa">Chikago</option>
-    <option value="ukr">Kyiv</option>
-    <option value="ukr">Lviv</option>
-    <option value="ukr">Dnipro</option>
-    <option value="ukr">Odesa</option>
+    
 </select>
 <p></p>
 <script>
-console.log(document.querySelectorAll("ger"));
-    let ger = document.getElementById("country")[0];
-    ger.onclick = () =>{
-       
+const cityArr = {
+    "ger" : ["Berlin", "Dortmund", "Hamburg", "Franfurt"],
+    "usa" : ["New-York", "Wasington", "Boston", "Chikago"],
+    "ukr" : ["Kyiv", "Lviv", "Dnipro", "Odesa"],
     }
-</script> -->
- 
+let prime_select = document.getElementById("country");
+prime_select.addEventListener("change", func);
+prime_select.addEventListener("change", toParagraph);
 
+let  city_select = document.getElementById("cities");
+city_select.addEventListener("change", toParagraph);
 
- 
+function func(){
+    city_select.innerHTML = "";
+    let selected_country = prime_select.value;
+    for (let i = 0; i < cityArr[selected_country].length; i++){
+        let new_option = document.createElement("option");
+        new_option.innerHTML = cityArr[selected_country][i];
+        city_select.appendChild(new_option);
+    }
+}
+
+let parag = document.querySelector("p");
+function toParagraph(){
+    parag.innerHTML = "";
+    parag.innerHTML = prime_select.options[prime_select.selectedIndex].text + ","
+    + city_select.options[city_select.selectedIndex].text;
+}
+</script>
+</body> -->
