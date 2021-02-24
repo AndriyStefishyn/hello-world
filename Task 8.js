@@ -7,9 +7,9 @@ console.log(toUpper("RegExp")); */
 
 //Task 2
 /* function checkEmail(str){
-    return /./g.test(str); 
+    return /\S+@\S+\.\S+/.test(str); 
 }
-        console.log(checkEmail("Qmail2@gmail.com")) */
+        console.log(checkEmail("Qmail@gmail.com")) */
  
 //Task 3
 /* let str ="cdbBdbsbz";
@@ -36,7 +36,39 @@ console.log(validation("9999-9999-9999-9999")); */
 
 //Task 6
 /* function email(str){
-return /^[^-_|\W]\w-?/g.test(str);
+let pattern = /^[a-zA-Z0-9]+([-]?\w+([-]?\w+))/
+return pattern.test(str);
 }
 console.log(email("my_mail@gmail.com"));
-console.log(email("#my_mail@gmail.com")); */
+console.log(email("#my_mail@gmail.com"));
+ 
+//Task 7
+function checkLogin(data){
+    let res = /^[a-zA-Z]{1}[a-zA-Z0-9\.]{1,9}$/;
+    let numb = /[0-9\.]+/g;
+    let resNumb = data.match(numb);
+    let result = res.test(data);
+    console.log('${data} is ${result} - ${resNumb}'); 
+}
+checkLogin('e1.88ret3');
+checkLogin('ee1*1ret3'); */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
