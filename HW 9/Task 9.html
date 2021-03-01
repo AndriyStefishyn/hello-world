@@ -29,17 +29,20 @@
     </script> -->
 
     <!-- Task 3 -->
-   <!--  <h3>header1</h3>
+   <!-- <h3>header1</h3>
     <div>text1</div>
     <h3>header2</h3>
     <div>text2</div>
  <script>
-    $("body").prepend($("div"));
- </script>  -->
-
+$('h3 + div').each(function(){
+    let $elem = $(this);
+    $elem.prev().before($elem);
+})
+ </script>
+ -->
 
 <!-- Task 4 -->
-<body>
+<!-- <body>
 <input type="checkbox" class="option" >Red<br>
 <input type="checkbox" class="option" >Green<br>
 <input type="checkbox" class="option" >Blue<br>
@@ -51,8 +54,7 @@
      $(this).toggleClass("highlight");
    
    let highlight = $(".highlight");
-   console.log(typeof(highlight));
    if(highlight.length==3){
        $(".option").hide();
    }});
- </script>
+ </script>  -->
